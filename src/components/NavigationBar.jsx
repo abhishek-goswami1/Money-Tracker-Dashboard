@@ -4,7 +4,8 @@ import { RxActivityLog } from "react-icons/rx";
 import { IoMdAnalytics } from "react-icons/io";
 import { TbTransactionRupee } from "react-icons/tb";
 import { MdHelpCenter } from "react-icons/md";
-
+import { MdArrowForward } from "react-icons/md";
+import { motion } from "motion/react";
 const navlinks = [
   { name: "Dashboard", icon: <MdDashboard /> },
   { name: "Activity", icon: <RxActivityLog /> },
@@ -28,8 +29,8 @@ function NavigationBar() {
         <span>Money Tracker</span>
       </div>
 
-      <div className=" w-6 h-6 bg-[#ff8c8c] rounded-full absolute -right-[12px] top-12 flex itmes-center justify-center ">
-        <rightArrow className=" text-white  w-3.75 " />
+      <div className=" w-6 h-6 bg-[#ff8c8c] rounded-full absolute -right-[12px] top-12 flex itmes-center justify-center text-white ">
+        <MdArrowForward className=" mt-1 w-4 " />
       </div>
 
       <div className="mt-10 flex flex-col space-y-8">
