@@ -22,15 +22,14 @@ const varinats = {
 function NavigationBar() {
   const [activeNavIndex, setActiveIndex] = useState(0);
   const [hoveredIndex, setHoveredIndex] = useState(null);
-  const [isExpamnmded, setIsExpanded] = useState(true);
+  const [isExpanded, setIsExpanded] = useState(true);
 
   return (
     <motion.div
      animate={isExpanded ? "expanded" : "nonExpanded"}
      variants={varinats}
      className="w-1/6 h-screen relative flex flex-col border border-r px-10 py-12">
-      <div onClick={() => setIsExpanded(!isExpanded)} 
-      className="flex space-x-2 items-center">
+      <div className="flex space-x-2 items-center">
         <img
           className="w-10 h-10 rounded-full"
           src="https://img.magnific.com/free-psd/money-illustration-isolated_23-2151568514.jpg"
@@ -39,7 +38,9 @@ function NavigationBar() {
         <span>Money Tracker</span>
       </div>
 
-      <div className=" w-6 h-6 bg-[#ff8c8c] rounded-full absolute -right-3 top-12 flex itmes-center justify-center text-white ">
+      <div 
+      onClick={() => setIsExpanded(!isExpanded)}
+      className=" w-6 h-6 bg-[#ff8c8c] rounded-full absolute -right-3 top-12 flex itmes-center justify-center text-white ">
         <MdArrowForward className=" mt-1 w-4 " />
       </div>
 
