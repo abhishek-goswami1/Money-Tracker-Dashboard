@@ -16,7 +16,7 @@ const navlinks = [
 
 const varinats = {
   expanded: { width: "20%" },
-  nonExpanded: { width: "5" },
+  nonExpanded: { width: "5%" },
 };
 
 function NavigationBar() {

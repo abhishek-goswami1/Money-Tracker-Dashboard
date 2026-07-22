@@ -1,15 +1,14 @@
 import NavigationBar from './components/NavigationBar'
-
+import Dashboard from './components/Dashboard'
 function App() {
   return (
-    <div className="flex bg-gray-50 min-h-screen">
+    <div className="flex w-full">
       {/* Side Navigation */}
       <NavigationBar />
       
       {/* Main Content Area will go here */}
-      <main className="flex-1 p-10">
-        <h1 className="text-2xl font-bold text-gray-800">Welcome back!</h1>
-        {/* Your dashboard cards and graphs will go here */}
+      <main className="grow">
+        <Dashboard/>
       </main>
     </div>
   )
