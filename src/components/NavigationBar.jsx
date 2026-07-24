@@ -15,8 +15,8 @@ const navlinks = [
 ];
 
 const varinats = {
-  expanded: { width: "20%" },
-  nonExpanded: { width: "5%" },
+  expanded: { width: "20%"},
+  nonExpanded: { width: "5%"},
 };
 
 function NavigationBar() {
@@ -28,7 +28,7 @@ function NavigationBar() {
     <motion.div
       animate={isExpanded ? "expanded" : "nonExpanded"}
       variants={varinats}
-      className={`w-1/5 h-screen relative flex flex-col border border-r py-12 ${
+      className={`w-1/5 h-240 relative flex flex-col border border-r py-12 ${
         isExpanded ? "px-10" : "px-4"
       }`}
     >
